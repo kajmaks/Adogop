@@ -13,7 +13,7 @@
         </shape>
     </item>
 
-    <item android:top="50dp" android:bottom="50dp" android:left="50dp" android:right="50dp">
+    <item android:top="30dp" android:bottom="30dp" android:left="30dp" android:right="30dp">
         <shape android:shape="oval">
             <solid android:color="#20FFFFFF"/>
         </shape>

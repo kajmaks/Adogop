@@ -66,6 +66,7 @@
                 android:contentDescription="Humidity" />
 
             <TextView
+                android:id="@+id/tvHumidityValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="65%"
@@ -105,6 +106,7 @@
                 android:contentDescription="Cloud cover" />
 
             <TextView
+                android:id="@+id/tvCloudsValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="80%"
@@ -150,9 +152,11 @@
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:id="@+id/tvRainValue"/>
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rain"
@@ -166,13 +170,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clockContainer"
         android:layout_width="0dp"
-        android:layout_height="220dp"
+        android:layout_height="240dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvDate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherDetailsContainer"
-        app:layout_constraintWidth_percent="0.85">
+        app:layout_constraintTop_toBottomOf="@id/weatherDetailsContainer"
+        app:layout_constraintWidth_percent="0.8">
 
         <View
             android:id="@+id/clockCircle"
@@ -182,40 +186,42 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="1.0"
+            app:layout_constraintHorizontal_bias="0.313"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.95" />
-
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="SATURDAY | MAY 31"
-            android:textColor="#80FFFFFF"
-            android:textSize="14sp"
-            android:gravity="center"
-            android:letterSpacing="0.1"
-            android:fontFamily="sans-serif-condensed"
-            app:layout_constraintBottom_toBottomOf="@id/clockCircle"
-            app:layout_constraintEnd_toEndOf="@id/clockCircle"
-            app:layout_constraintHeight_percent="0.95"
-            app:layout_constraintStart_toStartOf="@id/clockCircle"
-            app:layout_constraintTop_toTopOf="@id/clockCircle"
-            app:layout_constraintWidth_percent="0.95" />
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintWidth_percent="1.0" />
 
         <TextView
             android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.1"
             android:text="14:30"
             android:textColor="#FFFFFF"
-            android:textSize="64sp"
+            android:textSize="50sp"
             android:textStyle="bold"
-            android:letterSpacing="0.1"
-            android:fontFamily="sans-serif-light"
             app:layout_constraintBottom_toBottomOf="@id/clockCircle"
             app:layout_constraintEnd_toEndOf="@id/clockCircle"
             app:layout_constraintStart_toStartOf="@id/clockCircle"
             app:layout_constraintTop_toTopOf="@id/clockCircle" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SATURDAY | MAY 31"
+        android:textColor="#80FFFFFF"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="5dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
