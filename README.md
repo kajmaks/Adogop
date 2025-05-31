@@ -1,5 +1,6 @@
 # Agodop
-> Agodop is a simple Android weather app.  
+> Agodop is a simple Android weather app.
+
 On the main screen, it shows:
   - Temperature
   - Humidity
