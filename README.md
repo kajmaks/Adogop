@@ -9,3 +9,6 @@ On the main screen, it shows:
 
 If you tap on any of these, it opens a new screen with data for the whole week for that specific item.
 You can press the back button to return to the main screen.
+
+## Additional info
+Most of the project was done on discord call, so changes were commited by one person
