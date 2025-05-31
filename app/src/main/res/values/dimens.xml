@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="bar_corner_radius">6dp</dimen>
+</resources>

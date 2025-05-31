@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Monday"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:letterSpacing="0.03" />
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="65%"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@drawable/humidity_bar_bg"
+            android:padding="1dp">
+
+            <View
+                android:id="@+id/humidityBarFill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHumidityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Comfortable"
+            android:textColor="#A0FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

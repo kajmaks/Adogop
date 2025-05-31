@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="aqua">#00E0FFFF</color>
+    <color name="light_blue">#00BFFF</color>
+    <color name="medium_blue">#1E90FF</color>
+    <color name="dark_blue">#4169E1</color>
+    <color name="navy">#00008B</color>
+
+    <color name="rain_light">#4DA6FF</color>
+    <color name="rain_medium_light">#1A75FF</color>
+    <color name="rain_medium">#0066CC</color>
+    <color name="rain_heavy">#0052CC</color>
 </resources>
