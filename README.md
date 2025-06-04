@@ -13,10 +13,10 @@ You can press the back button to return to the main screen.
 ## Rooting
 ```mermaid
 graph TD
+    main --> temperature
     main --> cloudcover
     main --> humidity
     main --> rain
-    main --> time
 ```
 ## Additional info
 Most of the project was done on discord call, so changes were commited by one person
