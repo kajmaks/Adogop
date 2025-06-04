@@ -11,7 +11,7 @@ If you tap on any of these, it opens a new screen with data for the whole week f
 You can press the back button to return to the main screen.
 
 ## Rooting
-flowchart TD
+```flowchart TD
     Start --> CheckDeviceCompatibility
     CheckDeviceCompatibility --> UnlockBootloader
     UnlockBootloader --> InstallCustomRecovery
@@ -28,6 +28,6 @@ flowchart TD
     RebootDevice([Reboot Device])
     VerifyRootAccess([Verify Root Access])
     End([End])
-
+```
 ## Additional info
 Most of the project was done on discord call, so changes were commited by one person
